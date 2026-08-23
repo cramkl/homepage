@@ -1,3 +1,5 @@
+好的，已按照您的要求调整：默认界面为英文，中文版本中的论文作者列表也保留英文“et al.”，不再翻译为“等”。以下是更新后的完整HTML代码。
+```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -426,14 +428,14 @@
 
     <!-- 语言切换按钮 -->
     <div class="lang-switch">
-        <button id="langZh" class="active" data-lang="zh">中文</button>
-        <button id="langEn" data-lang="en">English</button>
+        <button id="langZh" data-lang="zh">中文</button>
+        <button id="langEn" class="active" data-lang="en">English</button>
     </div>
 
     <!-- ============================================================ -->
-    <!-- 中文内容 -->
+    <!-- 中文内容 (默认隐藏) -->
     <!-- ============================================================ -->
-    <div id="content-zh" class="lang-content active">
+    <div id="content-zh" class="lang-content">
         <!-- 头部 -->
         <header class="header">
             <div class="header-left">
@@ -475,33 +477,33 @@
             </ul>
         </section>
 
-        <!-- 3. 出版物 (标题保留英文) -->
+        <!-- 3. 出版物 (标题保留英文，作者中的"et al."保留英文) -->
         <section>
             <h2 class="section-title">3. 出版物 <span class="badge">23 篇</span></h2>
             <ol class="pub-list" style="list-style: none; padding-left: 0;">
-                <!-- 所有标题均为英文原文，期刊名、作者等保留英文或“等” -->
-                <li><span class="pub-meta"><span class="pub-authors">Yuanyuan Wang, <span class="self">Songxiao Cao</span>, Tao Song, 等.</span><br /><span class="pub-title">"Two-stage calibration method for portable light pen of vision based coordinate measurement system."</span> <span class="pub-journal">Optics Express</span>, <span class="pub-year">2025</span>. 33(24): p. 50871-50892.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Zhengyang Chen, <span class="self">Songxiao Cao</span>, Tao Song, 等.</span><br /><span class="pub-title">"Improved latent diffusion model for data augmentation in flat tube defect detection."</span> <span class="pub-journal">Journal of Intelligent Manufacturing</span>, <span class="pub-year">2025</span>.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Tianwei Pan, Yuanyuan Wang, 等.</span><br /><span class="pub-title">"Character restoration of Qin and Han bamboo slips based on improved conditional generative adversarial networks."</span> <span class="pub-journal">npj Heritage Science</span>, <span class="pub-year">2025</span>. 13(1).</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Yu Zhu, <span class="self">Songxiao Cao</span>, Tao Song, 等.</span><br /><span class="pub-title">"3D reconstruction and volume measurement of irregular objects based on RGB-D camera."</span> <span class="pub-journal">Measurement Science and Technology</span>, <span class="pub-year">2024</span>. 35(12).</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Jiaze Chen, <span class="self">Songxiao Cao</span>, Zhipeng Xu, 等.</span><br /><span class="pub-title">"A Palletizing System for Microchannel Heat Exchangers Based on 3D Visual Guidance."</span> <span class="pub-journal">IEEE Access</span>, <span class="pub-year">2023</span>. 11: p. 25843-25855.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Ye Jin, Toralf Trautmann, 等.</span><br /><span class="pub-title">"Design and Experiments of Autonomous Path Tracking Based on Dead Reckoning."</span> <span class="pub-journal">Applied Sciences</span>, <span class="pub-year">2022</span>. 13(1): p. 317.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Xianyun Huang, <span class="self">Songxiao Cao</span>, Chenguang Dong, 等.</span><br /><span class="pub-title">"Improved Fully Convolutional Siamese Networks for Visual Object Tracking Based on Response Behaviour Analysis."</span> <span class="pub-journal">Sensors</span>, <span class="pub-year">2022</span>. 22(17): p. 6550.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Zichao Shu, Zhipeng Xu, 等.</span><br /><span class="pub-title">"Character segmentation and restoration of Qin-Han bamboo slips using local auto-focus thresholding method."</span> <span class="pub-journal">Multimedia Tools and Applications</span>, <span class="pub-year">2022</span>.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Jianbin Tang, <span class="self">Songxiao Cao</span>, Jiaze Chen, 等.</span><br /><span class="pub-title">"Visual Scratch Defect Detection System of Aluminum Flat Tube Based on Cubic Bezier Curve Fitting Using Linear Scan Camera."</span> <span class="pub-journal">Applied Sciences</span>, <span class="pub-year">2022</span>. 12(12): p. 6049.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Ruilong Gao, Qiaojun Zhou, <span class="self">Songxiao Cao</span>, 等.</span><br /><span class="pub-title">"An Algorithm for Calculating Apple Picking Direction Based on 3D Vision."</span> <span class="pub-journal">Agriculture</span>, <span class="pub-year">2022</span>. 12(8): p. 1170.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Zichao Shu, <span class="self">Songxiao Cao</span>, Qing Jiang, 等.</span><br /><span class="pub-title">"Pairwise Registration Algorithm for Large-Scale Planar Point Cloud Used in Flatness Measurement."</span> <span class="pub-journal">Sensors</span>, <span class="pub-year">2021</span>. 21(14): p. 4860.</span></li>
+                <!-- 所有作者列表均使用 "et al." 而非 "等" -->
+                <li><span class="pub-meta"><span class="pub-authors">Yuanyuan Wang, <span class="self">Songxiao Cao</span>, Tao Song, et al.</span><br /><span class="pub-title">"Two-stage calibration method for portable light pen of vision based coordinate measurement system."</span> <span class="pub-journal">Optics Express</span>, <span class="pub-year">2025</span>. 33(24): p. 50871-50892.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Zhengyang Chen, <span class="self">Songxiao Cao</span>, Tao Song, et al.</span><br /><span class="pub-title">"Improved latent diffusion model for data augmentation in flat tube defect detection."</span> <span class="pub-journal">Journal of Intelligent Manufacturing</span>, <span class="pub-year">2025</span>.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Tianwei Pan, Yuanyuan Wang, et al.</span><br /><span class="pub-title">"Character restoration of Qin and Han bamboo slips based on improved conditional generative adversarial networks."</span> <span class="pub-journal">npj Heritage Science</span>, <span class="pub-year">2025</span>. 13(1).</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Yu Zhu, <span class="self">Songxiao Cao</span>, Tao Song, et al.</span><br /><span class="pub-title">"3D reconstruction and volume measurement of irregular objects based on RGB-D camera."</span> <span class="pub-journal">Measurement Science and Technology</span>, <span class="pub-year">2024</span>. 35(12).</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Jiaze Chen, <span class="self">Songxiao Cao</span>, Zhipeng Xu, et al.</span><br /><span class="pub-title">"A Palletizing System for Microchannel Heat Exchangers Based on 3D Visual Guidance."</span> <span class="pub-journal">IEEE Access</span>, <span class="pub-year">2023</span>. 11: p. 25843-25855.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Ye Jin, Toralf Trautmann, et al.</span><br /><span class="pub-title">"Design and Experiments of Autonomous Path Tracking Based on Dead Reckoning."</span> <span class="pub-journal">Applied Sciences</span>, <span class="pub-year">2022</span>. 13(1): p. 317.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Xianyun Huang, <span class="self">Songxiao Cao</span>, Chenguang Dong, et al.</span><br /><span class="pub-title">"Improved Fully Convolutional Siamese Networks for Visual Object Tracking Based on Response Behaviour Analysis."</span> <span class="pub-journal">Sensors</span>, <span class="pub-year">2022</span>. 22(17): p. 6550.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Zichao Shu, Zhipeng Xu, et al.</span><br /><span class="pub-title">"Character segmentation and restoration of Qin-Han bamboo slips using local auto-focus thresholding method."</span> <span class="pub-journal">Multimedia Tools and Applications</span>, <span class="pub-year">2022</span>.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Jianbin Tang, <span class="self">Songxiao Cao</span>, Jiaze Chen, et al.</span><br /><span class="pub-title">"Visual Scratch Defect Detection System of Aluminum Flat Tube Based on Cubic Bezier Curve Fitting Using Linear Scan Camera."</span> <span class="pub-journal">Applied Sciences</span>, <span class="pub-year">2022</span>. 12(12): p. 6049.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Ruilong Gao, Qiaojun Zhou, <span class="self">Songxiao Cao</span>, et al.</span><br /><span class="pub-title">"An Algorithm for Calculating Apple Picking Direction Based on 3D Vision."</span> <span class="pub-journal">Agriculture</span>, <span class="pub-year">2022</span>. 12(8): p. 1170.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Zichao Shu, <span class="self">Songxiao Cao</span>, Qing Jiang, et al.</span><br /><span class="pub-title">"Pairwise Registration Algorithm for Large-Scale Planar Point Cloud Used in Flatness Measurement."</span> <span class="pub-journal">Sensors</span>, <span class="pub-year">2021</span>. 21(14): p. 4860.</span></li>
                 <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span> and Xuanyin Wang.</span><br /><span class="pub-title">"Visual contour tracking based on inner-contour model particle filter under complex background."</span> <span class="pub-journal">EURASIP Journal on Image and Video Processing</span>, <span class="pub-year">2019</span>. 2019(1).</span></li>
                 <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span> and Xuanyin Wang.</span><br /><span class="pub-title">"Real-time dynamic gesture recognition and hand servo tracking using PTZ camera."</span> <span class="pub-journal">Multimedia Tools and Applications</span>, <span class="pub-year">2019</span>. 78(19): p. 27403-27424.</span></li>
                 <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Xuanyin Wang, and Ke Xiang.</span><br /><span class="pub-title">"Visual object tracking based on Motion-Adaptive Particle Filter under complex dynamics."</span> <span class="pub-journal">EURASIP Journal on Image and Video Processing</span>, <span class="pub-year">2017</span>. 2017.</span></li>
                 <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Xuanyin Wang, and X. Ke.</span><br /><span class="pub-title">"Visual Object Servo Tracking Based on the Particle Filter Method Using a Pan-Tilt-Zoom Camera."</span> <span class="pub-journal">International Journal of Advanced Robotic Systems</span>, <span class="pub-year">2017</span>. 9(4).</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Bin Zhou, Xuanyin Wang, <span class="self">Songxiao Cao</span>, 等.</span><br /><span class="pub-title">"Optimal bi-directional seam carving for compressibility-aware image retargeting."</span> <span class="pub-journal">Journal of Visual Communication and Image Representation</span>, <span class="pub-year">2016</span>. 41: p. 21-30.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Houqiang Zhao, Ke Xiang, <span class="self">Songxiao Cao</span>, 等.</span><br /><span class="pub-title">"Robust visual tracking via CAMShift and structural local sparse appearance model."</span> <span class="pub-journal">Journal of Visual Communication &amp; Image Representation</span>, <span class="pub-year">2016</span>.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Houqiang Zhao, Ke Xiang, <span class="self">Songxiao Cao</span>, 等.</span><br /><span class="pub-title">"Random walks colour histogram modification for human tracking."</span> <span class="pub-journal">IET Computer Vision</span>, <span class="pub-year">2016</span>.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Changwei Wu, Houqiang Zhao, <span class="self">Songxiao Cao</span>, 等.</span><br /><span class="pub-title">"Attention shift-based multiple saliency object segmentation."</span> <span class="pub-journal">Journal of Electronic Imaging</span>, <span class="pub-year">2016</span>. 25(5): p. 053009.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Ke Xiang, Xuanyin Wang, <span class="self">Songxiao Cao</span>, 等.</span><br /><span class="pub-title">"A new approach for real-time segmenting moving objects under cluttered background."</span> <span class="pub-journal">Electrical &amp; Electronics Engineering</span>, <span class="pub-year">2012</span>.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors">Ke Xiang, Xuanyin Wang, <span class="self">Songxiao Cao</span>, 等.</span><br /><span class="pub-title">"A new approach for real-time segmenting moving objects under cluttered background."</span> <span class="pub-journal">Electrical &amp; Electronics Engineering</span>, <span class="pub-year">2012</span>.</span></li>
-                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Xuanyin Wang, Xiaojie Fu, 等.</span><br /><span class="pub-title">"Servo Tracking of Moving Object Based on Particle Filter."</span> <span class="pub-journal">Advanced Materials Research</span>, <span class="pub-year">2011</span>. 271-273: p. 1130-1135.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Bin Zhou, Xuanyin Wang, <span class="self">Songxiao Cao</span>, et al.</span><br /><span class="pub-title">"Optimal bi-directional seam carving for compressibility-aware image retargeting."</span> <span class="pub-journal">Journal of Visual Communication and Image Representation</span>, <span class="pub-year">2016</span>. 41: p. 21-30.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Houqiang Zhao, Ke Xiang, <span class="self">Songxiao Cao</span>, et al.</span><br /><span class="pub-title">"Robust visual tracking via CAMShift and structural local sparse appearance model."</span> <span class="pub-journal">Journal of Visual Communication &amp; Image Representation</span>, <span class="pub-year">2016</span>.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Houqiang Zhao, Ke Xiang, <span class="self">Songxiao Cao</span>, et al.</span><br /><span class="pub-title">"Random walks colour histogram modification for human tracking."</span> <span class="pub-journal">IET Computer Vision</span>, <span class="pub-year">2016</span>.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Changwei Wu, Houqiang Zhao, <span class="self">Songxiao Cao</span>, et al.</span><br /><span class="pub-title">"Attention shift-based multiple saliency object segmentation."</span> <span class="pub-journal">Journal of Electronic Imaging</span>, <span class="pub-year">2016</span>. 25(5): p. 053009.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Ke Xiang, Xuanyin Wang, <span class="self">Songxiao Cao</span>, et al.</span><br /><span class="pub-title">"A new approach for real-time segmenting moving objects under cluttered background."</span> <span class="pub-journal">Electrical &amp; Electronics Engineering</span>, <span class="pub-year">2012</span>.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors">Ke Xiang, Xuanyin Wang, <span class="self">Songxiao Cao</span>, et al.</span><br /><span class="pub-title">"A new approach for real-time segmenting moving objects under cluttered background."</span> <span class="pub-journal">Electrical &amp; Electronics Engineering</span>, <span class="pub-year">2012</span>.</span></li>
+                <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span>, Xuanyin Wang, Xiaojie Fu, et al.</span><br /><span class="pub-title">"Servo Tracking of Moving Object Based on Particle Filter."</span> <span class="pub-journal">Advanced Materials Research</span>, <span class="pub-year">2011</span>. 271-273: p. 1130-1135.</span></li>
                 <li><span class="pub-meta"><span class="pub-authors"><span class="self">Songxiao Cao</span> and Xuanyin Wang.</span><br /><span class="pub-title">"Servo tracking of multi-color moving target based on target reference histogram update."</span> <span class="pub-journal">ICFP 2009; International conference on fluid power transmission and control</span>, <span class="pub-year">2009</span>.</span></li>
             </ol>
         </section>
@@ -609,9 +611,9 @@
 
 
     <!-- ============================================================ -->
-    <!-- 英文内容 (不变) -->
+    <!-- 英文内容 (默认显示) -->
     <!-- ============================================================ -->
-    <div id="content-en" class="lang-content">
+    <div id="content-en" class="lang-content active">
         <!-- 头部 -->
         <header class="header">
             <div class="header-left">
@@ -816,9 +818,10 @@
             setLanguage('en');
         });
 
-        // 默认中文
+        // 默认英文 (已通过 class 设置)
     })();
 </script>
 
 </body>
 </html>
+```
